@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PS Watersport</title>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@600&display=swap" rel="stylesheet">
+    <style>
+        /* css reset */
+        body{
+            color: rgb(7, 7, 7);
+            margin: 0px;
+            padding: 0px;
+            background: url('boating.jpeg');
+            font-family: 'Baloo Bhai 2', cursive;
+        }
+        .left{
+            /* border: 2px solid black; */
+            display: inline-block;
+            position: absolute;
+            left: 50px;
+            top: 3px;
+        }
+        .left img{
+            width: 130px;
+            height: 70px;
+        }
+        .left div{
+            text-align: center;
+        }
+
+        .mid{
+            /* border: 2px solid black; */
+            display: block;
+            width: 550px;
+            margin: 30px auto;
+        }
+        
+        .navbar li{
+            display: inline-block;
+            font-size: 25px;
+        }
+        .navbar li a{
+            color: black;
+            text-decoration: none;
+            padding: 30px 20px;
+        }
+        .navbar li a:hover{
+            text-decoration: underline;
+            color: rgb(255, 118, 118);
+        }
+
+        .right{
+            /* border: 2px solid black; */
+            display: inline-block;
+            position: absolute;
+            right: 30px;
+            top: 30px;
+        }
+        .btn{
+            margin: 0px 5px;
+            padding: 5px 9px;
+            border-radius: 11px;
+            font-size: 13px;
+            cursor: pointer;
+            color: rgb(255, 255, 255);
+            background-color: rgb(0, 0, 0);
+            font-family: 'Baloo Bhai 2', cursive;
+        }
+        .btn:hover{
+            background-color: rgb(63, 63, 63);
+        }
+
+        .container{
+            border:2px solid black;
+            border-radius: 33px;
+            margin: 150px 50px;
+            padding: 53px;
+            width: 40%;
+        }
+        .container h1{
+            text-align: center;
+            background-color: white;
+            border-radius: 17px;
+            filter: opacity(85%);
+        }
+
+        .form input {
+            margin: 5px auto;
+            padding: 3px;
+            width: 50%;
+            font-size: 20px;
+            border-radius: 7px;
+            text-align: center;
+            display: block;
+            font-family: 'Baloo Bhai 2', cursive;
+            filter: opacity(75%);
+        }
+        .form input:hover{
+            background-color: rgb(148, 148, 148);
+        }
+        .container button{
+            display: block;
+            margin: auto;
+            width: 52%;
+            font-size: 20px;
+            margin-top: 10px;
+            filter: opacity(85%);
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <!-- left box for logo -->
+        <div class="left">
+            <img src="images.png" alt="">
+            <div>PS WATERSPORT</div>
+        </div>
+        <!-- mid for navbar -->
+        <div class="mid">
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Sports</a></li>
+                    <li><a href="#">Locations</a></li>
+                    <li><a href="#">About</a></li>
+                </ul>
+            </nav>
+        </div>
+        <!-- right box for button -->
+        <div class="right">
+            <button class="btn">Call Us Now</button>
+            <button class="btn">Email Us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Come and Join our Water Sports Camp</h1>
+        <form action="noaction.php">
+            <div class="form">
+                <input type="text" placeholder="Enter Your First Name">
+            </div>
+            <div class="form">
+                <input type="text" placeholder="Enter Your Last Name">
+            </div>
+            <div class="form">
+                <input type="text" placeholder="Enter Your Age">
+            </div>
+            <div class="form">
+                <input type="text" placeholder="Enter Your Mobile No.">
+            </div>
+            <div class="form">
+                <input type="text" placeholder="Enter Your Email Id">
+            </div>
+            <button class="btn">SUBMIT</button>
+        </form>
+    </div>
+</body>
+</html>
